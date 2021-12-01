@@ -22,7 +22,7 @@
 .state_text h1 {
   color: #fff;
   font-size: 2.6em;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -65,7 +65,7 @@
     border-radius: 0 90px 0 90px;
     background-size: 80%;
     background-position-y: 100%;
-    background-position-x: -80%;
+    background-position-x: -120%;
     text-align: start;
   }
 
@@ -96,7 +96,7 @@
 
   .laptop img {
     position: absolute;
-    width: 140%;
+    width: 160%;
     top: -240px;
     left: -190px;
   }

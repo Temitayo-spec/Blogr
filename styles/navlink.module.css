@@ -163,10 +163,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 25%;
   }
 
   .right h3{
+    margin-right: 1em;
+    margin-bottom: 0;
+    color: #fff;
+  }
+
+  .right button{
+    background: #fff;
+    color: hsl(13, 100%, 72%);
+    font-weight: 700;
+  }
+
+  .right button:hover{
     color: #fff;
   }
 }
