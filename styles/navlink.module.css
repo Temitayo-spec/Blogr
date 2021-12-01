@@ -1,0 +1,172 @@
+.container ul {
+  position: absolute;
+  list-style: none;
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1em;
+}
+
+.container ul li {
+  padding: 0.8em;
+  cursor: pointer;
+}
+
+.container ul li span {
+  margin-left: 0.5em;
+}
+
+.container ul li p {
+  text-decoration: none;
+  color: hsl(208, 49%, 24%);
+  font-weight: 600;
+}
+
+.dropbox {
+  background: hsl(240, 13%, 91%);
+  width: 90%;
+  margin: auto;
+  border-radius: 8px;
+  height: 0;
+  overflow: hidden;
+}
+
+.dropbox p {
+  padding: 0.4em 0;
+  color: hsl(207, 13%, 34%);
+  cursor: pointer;
+}
+
+.links hr {
+  width: 90%;
+  margin: 0.6em auto;
+  color: hsl(240, 2%, 79%);
+  opacity: 0.2;
+  height: 1px;
+}
+
+.right h3 {
+  font-weight: 600;
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.right button {
+  background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  height: 50px;
+  width: 130px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  outline: none;
+  border-radius: 34px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+}
+
+.right button:hover {
+  background: hsl(13, 100%, 72%);
+}
+
+.active_dropbox {
+  height: 100%;
+  overflow: visible;
+}
+
+.spin {
+  transform: rotate(180deg);
+  transition: all 0.4s ease;
+}
+
+.norm {
+  transform: rotate(0deg);
+  transition: all 0.4s ease;
+}
+
+.container ul li .col {
+  color: hsl(207, 13%, 34%);
+  transition: all 0.4s ease;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .container ul {
+    position: static;
+    background: transparent;
+    display: flex;
+    align-items: center;
+  }
+
+  .container ul li p {
+    color: #fff;
+  }
+
+  .container ul li p:hover {
+    text-decoration: underline;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container ul li .col {
+    color: #fff;
+  }
+
+  .dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dropdown li {
+    width: 160px;
+  }
+
+  .dropbox {
+    text-align: left;
+  }
+
+  .dropbox p {
+    color: #000;
+  }
+
+  .dropbox p:hover{
+    font-weight: 600;
+  }
+
+  .active_dropbox {
+    width: 150px;
+    padding: 0.5em 2em;
+    background: #fff;
+    position: absolute;
+    height: auto;
+    top: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .links hr {
+    display: none;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+  }
+
+  .right h3{
+    color: #fff;
+  }
+}

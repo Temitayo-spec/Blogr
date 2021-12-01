@@ -1,0 +1,91 @@
+.wrapper {
+  background: linear-gradient(136deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
+    url("../public/images/bg-pattern-intro.svg");
+  position: relative;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+  border-bottom-left-radius: 150px;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  height: 70vh;
+  z-index: 2;
+}
+
+.inner {
+  z-index: 10;
+  position: relative;
+}
+
+.bg img {
+  margin-left: -390px;
+  width: 350%;
+  height: 150%;
+  object-fit: cover;
+  position: relative;
+}
+
+.inner .lhs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  z-index: 10;
+}
+
+.lhs .hamburger img {
+  width: 110%;
+  cursor: pointer;
+}
+
+.rhs {
+  position: relative;
+  margin: 10px auto;
+  width: 90%;
+  display: none;
+}
+
+.rhs_active {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    background: url("../public/images/bg-pattern-intro.svg"),
+      linear-gradient(136deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 1.5em;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+
+  .rhs {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .bg img {
+    width: 100%;
+    margin: 0%;
+  }
+}
